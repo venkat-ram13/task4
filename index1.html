@@ -14,10 +14,14 @@
         request.onload = function(){
             var data = JSON.parse(request.response);
             console.log(data);
-        for(i=0;i<data.length;i++){
-             console.log(`country name :${data[i].name.common}  region:${data[i].region} 
-                          subregion    :${data[i].subregion}    flag  :${data[i].flags.png}
-                        population     :${data[i].population}`);
+        for(i=0;i<data.length;i++){{console.log(`
+            country name :${data[i].name.common} 
+            region       :${data[i].region} 
+            subregion    :${data[i].subregion}   
+            flag         :${data[i].flags.png}
+            population   :${data[i].population}`);
+        }
+            
         }
 };
     </script>
